@@ -1,3 +1,60 @@
+#Young at Heart
+
+## Overview
+Users can create an account which will allow them to create a vacation plan. Once a vacation plan has been created, a list of available parks will be presented for them to choose from which will dictate the information available to them pulled from the various APIs with information concerning wait times, restaurant options, the ride availability for each day in their vacation so that they can plan which days to spend where. Users can save their vacation planning calendar and review it as their vacation draws closer in order to make any changes based on updated information concerning availability and wait times at the parks they choose. 
+
+## Usage
+
+This app is deployed on heroku. If you would like to try it out, it is available at http://young-at-heart.herokuapp.com
+
+## Features
+Pulls information from https://touringplans.com/api
+
+### Data Layout
+
+- User 
+    - username
+    - password
+    - email
+    - first name
+    - last name
+    - phone number
+    - address
+    - billing_address
+    - date_created
+    - date_modified
+    - id
+- Vacation
+    - nickname
+    - start date
+    - end date
+    - user_id
+    - date_created
+    - date_modified
+    - id
+- VacationDay
+    - park_id
+    - vacation_id
+    - date_created
+    - date_modified
+    - id
+- Parks 
+    - 
+
+
+
+### Data Served
+
+    Per Park
+        Ride Schedule
+        Wait Times
+
+## Storyboard
+
+## Development
+
+
+# Create React App Notes
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
